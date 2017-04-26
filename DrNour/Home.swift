@@ -11,12 +11,14 @@ import UIKit
 class Home: UIViewController {
 
     @IBOutlet weak var drNourIV: UIView!
+    @IBOutlet weak var aboutSV: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
+        aboutSV.frame = CGRect(x: (self.view.frame.width / 2) - (aboutSV.frame.width / 2), y: aboutSV.frame.origin.y, width: aboutSV.frame.width, height: aboutSV.frame.height)
         
         let logo = UIImageView.init(image: UIImage(named: "nour-logo-new"))
         
@@ -46,5 +48,10 @@ class Home: UIViewController {
         drNourIV.layer.addSublayer(shapeLayer)
     }
 
+    @IBAction func sideMenuBtnOnClick(_ sender: AnyObject) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "SideMenu") as! SideMenuTableViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+    }
 
 }

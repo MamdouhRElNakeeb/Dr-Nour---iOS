@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PKg-ju-S25">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t11-33-cEi">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,10 +10,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Side Menu Table View Controller-->
+        <!--SideMenuTC-->
         <scene sceneID="0oj-Wv-N2U">
             <objects>
-                <tableViewController id="phs-0c-OSF" customClass="SideMenuTableViewController" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SideMenu" title="SideMenuTC" id="phs-0c-OSF" customClass="SideMenuTableViewController" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TA9-98-Be2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,20 +21,20 @@
                         <sections>
                             <tableViewSection id="Kri-ar-lpH">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Eex-Gi-56W">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Eex-Gi-56W">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eex-Gi-56W" id="Scc-hY-WvU">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozZ-BT-JLD">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="7" width="7" maxX="1" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.1215686275" green="0.53333333329999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الرئيسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svk-OV-M21">
-                                                    <frame key="frameInset" minX="8" minY="8" maxX="18" maxY="8"/>
+                                                    <frame key="frameInset" minX="7" minY="7" maxX="18" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" red="0.1215686275" green="0.53333333329999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,134 +43,112 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gBW-Wx-7pc">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gBW-Wx-7pc" id="wRY-wt-rrT">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الخدمات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-rj-fMg">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-c0-Ahz">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.1215686275" green="0.59960007437142848" blue="0.84261478027142844" alpha="1" colorSpace="calibratedRGB"/>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wkh-eS-f52">
-                                        <rect key="frame" x="0.0" y="152" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Wkh-eS-f52">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wkh-eS-f52" id="k7z-pa-Ij4">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="احجز موعد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIg-Ac-E30">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
+                                                    <frame key="frameInset" minX="13" minY="8" maxX="14" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-89-P4f">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="8" width="7" maxX="1" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.1215686275" green="0.58252418151428564" blue="0.61345741419999988" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="y1V-1n-w8l">
-                                        <rect key="frame" x="0.0" y="196" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="y1V-1n-w8l">
+                                        <rect key="frame" x="0.0" y="224" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y1V-1n-w8l" id="Fe1-QV-kTU">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="خدمات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-PK-NTQ">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
+                                                    <frame key="frameInset" minX="13" minY="7" maxX="14" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6qY-mR-SFk">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="7" width="7" maxX="1" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.1215686275" green="0.58252418149999996" blue="0.6134574142" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.44791666666666669" green="0.4826388888888889" blue="0.75929074753333337" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PHZ-Kg-Jnd">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="PHZ-Kg-Jnd">
+                                        <rect key="frame" x="0.0" y="304" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PHZ-Kg-Jnd" id="aiv-P4-cRO">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ألبوم صور" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsZ-T9-LtU">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
+                                                    <frame key="frameInset" minX="13" minY="7" maxX="14" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-O8-f1h">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="7" width="7" maxX="1" maxY="9"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.1215686275" green="0.58252418149999996" blue="0.6134574142" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.34375" green="0.77002418149999996" blue="0.81484630308888883" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xml-dx-YTu">
-                                        <rect key="frame" x="0.0" y="284" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="xml-dx-YTu">
+                                        <rect key="frame" x="0.0" y="384" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xml-dx-YTu" id="wFY-qv-Pn0">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="عن وايتى" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yY-fB-A2o">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
+                                                    <frame key="frameInset" minX="13" minY="8" maxX="14" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-BN-oy2">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="8" width="7" maxX="1" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.1215686275" green="0.58252418149999996" blue="0.6134574142" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.093790849722222236" green="0.58252418149999996" blue="0.79513888888888884" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PoR-dd-FXJ">
-                                        <rect key="frame" x="0.0" y="328" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="PoR-dd-FXJ">
+                                        <rect key="frame" x="0.0" y="464" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PoR-dd-FXJ" id="3Ld-LI-O7b">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اتصل بنا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTe-ti-6LA">
-                                                    <frame key="frameInset" minX="13" minY="8" maxX="13" maxY="8"/>
+                                                    <frame key="frameInset" minX="13" minY="8" maxX="14" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IR9-cw-e9h">
-                                                    <frame key="frameInset" minY="8" width="8" maxY="8"/>
+                                                    <frame key="frameInset" minY="8" width="7" maxX="1" maxY="8"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.1215686275" green="0.58252418149999996" blue="0.6134574142" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.1215686275" green="0.66319444444444442" blue="0.78819444444444442" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -185,13 +162,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="t4z-rs-eXu">
-                        <barButtonItem key="leftBarButtonItem" image="settings_btn" id="Ubw-Ns-UM6"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="AtT-Nj-X2i"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="AtT-Nj-X2i">
+                            <connections>
+                                <action selector="backBtnOnClick:" destination="phs-0c-OSF" id="z4b-hi-klC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVw-Sh-SJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610.39999999999998" y="79.610194902548727"/>
+            <point key="canvasLocation" x="1217" y="80"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="rCd-VD-s7N">
@@ -237,14 +217,7 @@
                                                 <frame key="frameInset"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr Nour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Um-Qj-1bR">
-                                                <frame key="frameInset" minY="118" width="375" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-i7-3G7">
+                                            <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-i7-3G7">
                                                 <frame key="frameInset" minX="55" minY="36" width="264" height="61"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                 <subviews>
@@ -255,25 +228,32 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="تخصص فى مجال تجميل الاسنان . عضو الجمعية الأمريكية لتجميل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWO-Bu-Ndd">
-                                                        <frame key="frameInset" minY="17" width="264" height="10"/>
+                                                        <frame key="frameInset" minX="2" minY="17" width="261" height="10"/>
                                                         <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="9"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="الأسنان و عضو الكونجرس العالمى لزرع الأسنان - جامعة نيويورك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enb-eV-ybh">
-                                                        <frame key="frameInset" minY="34" width="264" height="10"/>
+                                                        <frame key="frameInset" minX="7" minY="34" width="251" height="10"/>
                                                         <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="9"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="أحد مطورى الأسنان التجميلية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xer-d5-ccD">
-                                                        <frame key="frameInset" minY="51" width="264" height="10"/>
+                                                        <frame key="frameInset" minX="74" minY="51" width="117" height="10"/>
                                                         <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="9"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr Nour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Um-Qj-1bR">
+                                                <frame key="frameInset" minY="79.01%" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </view>
                                 </subviews>
@@ -282,20 +262,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Gf-ut-Ulq">
-                        <barButtonItem key="rightBarButtonItem" image="Menu Filled-32" id="WV3-cn-fkp"/>
+                        <barButtonItem key="rightBarButtonItem" image="Menu Filled-32" id="WV3-cn-fkp">
+                            <connections>
+                                <action selector="sideMenuBtnOnClick:" destination="kIJ-Jb-VYC" id="NGM-mA-2RR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="aboutSV" destination="0Cc-i7-3G7" id="8X7-de-3ON"/>
                         <outlet property="drNourIV" destination="vy8-T7-HwE" id="Q0m-zK-Fsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWa-N3-2QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="534.78260869565224"/>
+            <point key="canvasLocation" x="246" y="80"/>
         </scene>
-        <!--الرئيسية-->
+        <!--خدمات-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Home1" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Services" id="BYZ-38-t0r" customClass="Services" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -312,7 +297,7 @@
                                 <frame key="frameInset" minY="64" width="187" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appointment_img" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-GM-wFz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orthodntics-procedure" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-GM-wFz">
                                         <frame key="frameInset" maxX="-1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -320,24 +305,20 @@
                                         <frame key="frameInset" maxX="-1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appointment_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cly-bd-K58">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="احجز موعد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oK-Wt-ORh">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تقويم الأسنان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oK-Wt-ORh">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPl-XN-Ahq">
                                                 <frame key="frameInset" width="10"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="0.29411764705882354" alpha="0.70205479452054798" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -346,7 +327,7 @@
                                 <frame key="frameInset" minY="64" width="187" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="services_img" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-vC-u98">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teeth-whitninig-procedure" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-vC-u98">
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -354,14 +335,10 @@
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="services_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-Nk-b5L">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الخدمات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-TN-lnq">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تبييض الأسنان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-TN-lnq">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -381,7 +358,7 @@
                                 <frame key="frameInset" minY="56.87%" width="187" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appointment_img" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-uW-woT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hollywood-smile-procedure" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-uW-woT">
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -389,24 +366,20 @@
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appointment_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-5N-KbG">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="المدونة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTp-hA-ifW">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إبتسامة هوليوود" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTp-hA-ifW">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-bf-eml">
                                                 <frame key="frameInset" width="10"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" red="0.75294117647058822" green="0.47843137254901957" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.75294117647058822" green="0.47843137254901957" blue="0.29411764705882354" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -415,7 +388,7 @@
                                 <frame key="frameInset" minY="56.87%" width="187" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery_img" translatesAutoresizingMaskIntoConstraints="NO" id="gs0-ok-ykx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dental-implant-procedure" translatesAutoresizingMaskIntoConstraints="NO" id="gs0-ok-ykx">
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -423,24 +396,20 @@
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yf1-p1-hgf">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ألبوم صور" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqA-2G-VAg">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="زراعة الأسنان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqA-2G-VAg">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-4e-6y4">
                                                 <frame key="frameInset" width="10"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" red="0.6705882352941176" green="0.015686274509803921" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.67011176215277779" green="0.017333984375" blue="0.71872287326388884" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -449,7 +418,7 @@
                                 <frame key="frameInset" width="187" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contact_img" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-Fh-iQ6">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fixed-bridge-procedure" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-Fh-iQ6">
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -457,24 +426,20 @@
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contact_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-Wo-lmM">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اتصل بنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="782-ps-2Ib">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تركيبات الأسنان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="782-ps-2Ib">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-0G-qsn">
                                                 <frame key="frameInset" width="10"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" red="0.9137254901960784" green="0.70588235294117641" blue="0.26666666666666666" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.91316731770833337" green="0.704833984375" blue="0.267333984375" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.70205479449999997" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -491,14 +456,10 @@
                                         <frame key="frameInset"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Pcj-Z7-Nzf">
-                                                <frame key="frameInset" minY="50.00%" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="عن وايتى" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-RY-z1F">
-                                                <frame key="frameInset" minY="83.33%" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="أراء عملاؤنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-RY-z1F">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -516,19 +477,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="الرئيسية" id="oY0-K4-adK"/>
+                    <navigationItem key="navigationItem" title="خدمات" id="oY0-K4-adK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="lrK-gm-5ea">
+                            <connections>
+                                <action selector="sideMenuBtnOnCLick:" destination="BYZ-38-t0r" id="EsJ-bm-det"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="aboutBtn" destination="yB8-IC-tik" id="BsA-VC-Rsr"/>
-                        <outlet property="blogBtn" destination="dGZ-sV-8Tg" id="buf-0S-k2P"/>
-                        <outlet property="contactBtn" destination="5du-Ki-dYz" id="QQR-0F-Xef"/>
-                        <outlet property="galleryBtn" destination="EM3-z8-Fh3" id="dw8-6w-rCk"/>
-                        <outlet property="reserveAppointBtn" destination="2Lf-uT-4jE" id="Zwj-7R-Pta"/>
-                        <outlet property="servicesBtn" destination="MEk-Bv-30H" id="lxV-qJ-OFX"/>
+                        <outlet property="clientsBtn" destination="yB8-IC-tik" id="nA9-3z-y6m"/>
+                        <outlet property="fixedBtn" destination="5du-Ki-dYz" id="58x-nx-W7F"/>
+                        <outlet property="hollyBtn" destination="dGZ-sV-8Tg" id="wNZ-bM-ALA"/>
+                        <outlet property="implantBtn" destination="EM3-z8-Fh3" id="jIX-j7-wxx"/>
+                        <outlet property="orthoBtn" destination="2Lf-uT-4jE" id="zio-et-LOn"/>
+                        <outlet property="whitningBtn" destination="MEk-Bv-30H" id="qlC-Z7-k7t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362.4000000000001" y="322.48875562218893"/>
+            <point key="canvasLocation" x="1324" y="1973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TW6-ml-1LD">
@@ -538,9 +505,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Dgm-tf-oKZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -550,7 +517,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nw-Db-D0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="-450.22488755622192"/>
+            <point key="canvasLocation" x="1324" y="1219"/>
         </scene>
         <!--Services-->
         <scene sceneID="79p-qm-eNN">
@@ -630,45 +597,6 @@
             </objects>
             <point key="canvasLocation" x="-1281" y="1220"/>
         </scene>
-        <!--Contact-->
-        <scene sceneID="A6i-PL-oQd">
-            <objects>
-                <viewController id="y3N-5W-fO2" customClass="ViewController" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z2z-KZ-tqd"/>
-                        <viewControllerLayoutGuide type="bottom" id="QwP-y1-0jP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MNV-cT-16l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Contact" id="xh6-TY-ohe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="mvp-e0-PAc"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r2e-OD-WnA" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1478" y="1973"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TNI-cT-JAa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mpI-A0-Ea8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="x8s-X7-A9v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="y3N-5W-fO2" kind="relationship" relationship="rootViewController" id="KmG-rH-e3U"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EsO-TL-Xu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1479" y="1219"/>
-        </scene>
         <!--Gallery-->
         <scene sceneID="HN1-O5-9V0">
             <objects>
@@ -727,7 +655,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPR-HO-gqr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2409" y="1972"/>
+            <point key="canvasLocation" x="3065" y="1972"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bJy-Z7-0gg">
@@ -745,7 +673,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phh-yO-CXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2410" y="1220"/>
+            <point key="canvasLocation" x="3065" y="1230"/>
         </scene>
         <!--HomeNC-->
         <scene sceneID="fRu-qL-5wt">
@@ -767,7 +695,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8U-zC-3JI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="656.79999999999995" y="-202.84857571214394"/>
+            <point key="canvasLocation" x="247" y="-648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GMG-bu-Scm">
@@ -786,24 +714,216 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGa-WT-1yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="-648"/>
+            <point key="canvasLocation" x="1217" y="-648"/>
+        </scene>
+        <!--اتصل بنا-->
+        <scene sceneID="afX-lf-jqS">
+            <objects>
+                <tableViewController storyboardIdentifier="ContactUs" id="R3S-w4-shK" customClass="ContactUs" customModule="DrNour" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TU5-9e-ryI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="الموقع" id="XCX-0B-DOO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="6BL-Cg-Syy">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6BL-Cg-Syy" id="7w2-cy-zB0">
+                                            <frame key="frameInset" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BhE-Mb-5LD" customClass="GMSMapView">
+                                                    <frame key="frameInset" height="100.00%"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="معلومات التواصل" id="7Tj-NN-9FG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="bng-UK-GoR">
+                                        <rect key="frame" x="0.0" y="420" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bng-UK-GoR" id="mp1-sV-ju3">
+                                            <frame key="frameInset" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="العنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-ht-bUh">
+                                                    <frame key="frameInset" minX="8" minY="8" height="23" maxX="8"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="رقم 123، شارع حسن المأمون، برج الأميرة ديانا - امام النادى الاهلى، مدينة نصر" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-ob-IQj">
+                                                    <frame key="frameInset" minX="8" height="52" maxX="8" maxY="8"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XCj-Pa-ULo">
+                                        <rect key="frame" x="0.0" y="520" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XCj-Pa-ULo" id="ij1-n6-brQ">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الخط الساخن: ١٩٣٤٣" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNT-Ub-f5S">
+                                                    <frame key="frameInset" minX="8" height="43" maxX="8"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="لحجز موعد" id="wVB-xm-oLq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="vyU-Qd-LF6">
+                                        <rect key="frame" x="0.0" y="592" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vyU-Qd-LF6" id="zqx-pp-AYu">
+                                            <frame key="frameInset" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لحجز موعد مع دكتور نور للكشف على أسنانك برجاء التواصل معنا من خلال المعلومات التالية." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-L4-L5D">
+                                                    <frame key="frameInset" minX="8" maxX="8" maxY="24"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YhK-8P-w1V">
+                                        <rect key="frame" x="0.0" y="692" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YhK-8P-w1V" id="Gvh-t4-yFF">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-il-cq4">
+                                                    <frame key="frameInset" width="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Google Mobile-48" translatesAutoresizingMaskIntoConstraints="NO" id="Fxa-kb-Bbv">
+                                                            <frame key="frameInset" minX="8" maxX="8"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01024438000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-ys-i5L">
+                                                    <frame key="frameInset" minX="8" maxX="54"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZK4-3Z-IG8">
+                                        <rect key="frame" x="0.0" y="736" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZK4-3Z-IG8" id="ZXt-Ot-K5E">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZZ-MU-fbh">
+                                                    <frame key="frameInset" width="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Message Filled-50" translatesAutoresizingMaskIntoConstraints="NO" id="zZ0-hx-9O8">
+                                                            <frame key="frameInset" minX="8" maxX="8"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="info@drnour1.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Q-NP-ODd">
+                                                    <frame key="frameInset" minX="8" maxX="54"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="R3S-w4-shK" id="nsa-gA-iMR"/>
+                            <outlet property="delegate" destination="R3S-w4-shK" id="bwI-et-GEt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="اتصل بنا" id="Hu2-W5-hYc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="0D6-Rh-YBm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="swZ-im-qHW">
+                            <connections>
+                                <action selector="backBtnOnClick:" destination="R3S-w4-shK" id="AUC-S3-ZOs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="UD1-ht-bUh" id="ul4-Wm-g9N"/>
+                        <outlet property="mapUIView" destination="BhE-Mb-5LD" id="kK0-Zk-14k"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kjy-ve-JOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4804" y="1972.2638680659672"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5eK-rb-55j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jhx-eU-OqF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fM0-k0-DId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R3S-w4-shK" kind="relationship" relationship="rootViewController" id="fU5-8Z-II2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chg-hD-us1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4804" y="1229"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Google Mobile-48" width="48" height="48"/>
         <image name="Menu Filled-32" width="25" height="25"/>
-        <image name="about_icon" width="48" height="48"/>
+        <image name="Message Filled-50" width="50" height="50"/>
         <image name="about_img" width="512" height="512"/>
-        <image name="appointment_icon" width="48" height="48"/>
-        <image name="appointment_img" width="512" height="512"/>
-        <image name="contact_icon" width="50" height="50"/>
-        <image name="contact_img" width="512" height="512"/>
+        <image name="dental-implant-procedure" width="373" height="258"/>
         <image name="drnour_img" width="385" height="512"/>
-        <image name="gallery_icon" width="48" height="48"/>
-        <image name="gallery_img" width="512" height="512"/>
+        <image name="fixed-bridge-procedure" width="373" height="258"/>
+        <image name="hollywood-smile-procedure" width="373" height="258"/>
         <image name="home_bg" width="864" height="916"/>
         <image name="home_ribbon" width="458" height="244"/>
-        <image name="services_icon" width="48" height="48"/>
-        <image name="services_img" width="512" height="512"/>
-        <image name="settings_btn" width="25" height="25"/>
+        <image name="orthodntics-procedure" width="373" height="258"/>
+        <image name="teeth-whitninig-procedure" width="373" height="258"/>
     </resources>
 </document>
