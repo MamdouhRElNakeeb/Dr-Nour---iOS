@@ -66,17 +66,19 @@ class SideMenuTableViewController: UITableViewController {
             _ = navigationController?.popViewController(animated: true)
             return
         case 1:
-            uiview = storyBoard.instantiateViewController(withIdentifier: "Services") as! Services
+            uiview = storyBoard.instantiateViewController(withIdentifier: "ReserveAppointment") as! ReserveAppointment
             break
         case 2:
-            uiview = storyBoard.instantiateViewController(withIdentifier: "Services") as! Services
+            uiview = storyBoard.instantiateViewController(withIdentifier: "ServicesCV") as! ServicesCV
             break
         case 3:
-            uiview = storyBoard.instantiateViewController(withIdentifier: "Services") as! Services
+            uiview = storyBoard.instantiateViewController(withIdentifier: "Gallery") as! Gallery
             break
         case 4:
-            uiview = storyBoard.instantiateViewController(withIdentifier: "Services") as! Services
-            break
+            let uiTVC = storyBoard.instantiateViewController(withIdentifier: "AboutUs") as! AboutUs
+            self.navigationController?.pushViewController(uiTVC, animated: true)
+
+            return
         case 5:
             uiview = storyBoard.instantiateViewController(withIdentifier: "ContactUs") as! ContactUs
             break

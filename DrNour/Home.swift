@@ -33,7 +33,7 @@ class Home: UIViewController {
         maskLayer.path = maskPath.cgPath
         drNourIV.layer.mask = maskLayer
         
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: drNourIV.frame.width / 2,y: drNourIV.frame.height / 2), radius: drNourIV.frame.width / 2, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: drNourIV.frame.width / 2, y: drNourIV.frame.height / 2), radius: drNourIV.frame.width / 2, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.cgPath
@@ -53,5 +53,4 @@ class Home: UIViewController {
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "SideMenu") as! SideMenuTableViewController
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
-
 }

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33369DBD1EB38282004FBA29 /* ServicesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DBC1EB38282004FBA29 /* ServicesItem.swift */; };
+		33369DBF1EB38ECF004FBA29 /* ServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DBE1EB38ECF004FBA29 /* ServiceCollectionCell.swift */; };
+		33369DC11EB39044004FBA29 /* ServicesCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DC01EB39044004FBA29 /* ServicesCV.swift */; };
+		33369DC31EB3A3D1004FBA29 /* ServiceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DC21EB3A3D1004FBA29 /* ServiceDetails.swift */; };
+		33369DC71EB3DF7E004FBA29 /* ReserveAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DC61EB3DF7E004FBA29 /* ReserveAppointment.swift */; };
+		33369DC91EB3EFAE004FBA29 /* CustomDatePickerAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33369DC81EB3EFAE004FBA29 /* CustomDatePickerAlert.xib */; };
+		33369DCB1EB3F17B004FBA29 /* CustomDatePickerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DCA1EB3F17B004FBA29 /* CustomDatePickerAlert.swift */; };
+		33369DCD1EB3F1C7004FBA29 /* CustomAlertViewTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DCC1EB3F1C7004FBA29 /* CustomAlertViewTransitioner.swift */; };
+		33369DCF1EB41C93004FBA29 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33369DCE1EB41C93004FBA29 /* Utils.swift */; };
+		33BF0E361EB0A114005E086B /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF0E351EB0A114005E086B /* Gallery.swift */; };
+		33BF0E381EB0A878005E086B /* GalleryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF0E371EB0A878005E086B /* GalleryCollectionCell.swift */; };
+		33BF0E3B1EB0DA7E005E086B /* AboutUsTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF0E3A1EB0DA7E005E086B /* AboutUsTabelViewCell.swift */; };
+		33BF0E3D1EB0DCBD005E086B /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF0E3C1EB0DCBD005E086B /* AboutUs.swift */; };
 		33E676B51EAFFFA700086600 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E676B41EAFFFA700086600 /* Services.swift */; };
 		33E676B71EB00D5300086600 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E676B61EB00D5300086600 /* ContactUs.swift */; };
 		33EED7DC1E9F8FEF0051671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EED7DB1E9F8FEF0051671D /* AppDelegate.swift */; };
@@ -16,11 +29,23 @@
 		47BE28DC1EAFC6D30005AE96 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE28DB1EAFC6D30005AE96 /* Home.swift */; };
 		47BE28DE1EAFDF510005AE96 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE28DD1EAFDF510005AE96 /* SideMenuTableViewController.swift */; };
 		47DDE4E11EAF999C00543377 /* GE_SS_Two_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47DDE4E01EAF999C00543377 /* GE_SS_Two_Medium.otf */; };
-		47DDE4E41EAFA1E400543377 /* Home2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DDE4E31EAFA1E400543377 /* Home2.swift */; };
 		AD79CDE4D5F559A013E7BEAA /* Pods_DrNour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547727F117F858626C96CEFC /* Pods_DrNour.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33369DBC1EB38282004FBA29 /* ServicesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesItem.swift; sourceTree = "<group>"; };
+		33369DBE1EB38ECF004FBA29 /* ServiceCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCollectionCell.swift; sourceTree = "<group>"; };
+		33369DC01EB39044004FBA29 /* ServicesCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesCV.swift; sourceTree = "<group>"; };
+		33369DC21EB3A3D1004FBA29 /* ServiceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetails.swift; sourceTree = "<group>"; };
+		33369DC61EB3DF7E004FBA29 /* ReserveAppointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveAppointment.swift; sourceTree = "<group>"; };
+		33369DC81EB3EFAE004FBA29 /* CustomDatePickerAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePickerAlert.xib; sourceTree = "<group>"; };
+		33369DCA1EB3F17B004FBA29 /* CustomDatePickerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePickerAlert.swift; sourceTree = "<group>"; };
+		33369DCC1EB3F1C7004FBA29 /* CustomAlertViewTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewTransitioner.swift; sourceTree = "<group>"; };
+		33369DCE1EB41C93004FBA29 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		33BF0E351EB0A114005E086B /* Gallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		33BF0E371EB0A878005E086B /* GalleryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionCell.swift; sourceTree = "<group>"; };
+		33BF0E3A1EB0DA7E005E086B /* AboutUsTabelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTabelViewCell.swift; sourceTree = "<group>"; };
+		33BF0E3C1EB0DCBD005E086B /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		33E676B41EAFFFA700086600 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		33E676B61EB00D5300086600 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		33EED7D81E9F8FEF0051671D /* DrNour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrNour.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +58,6 @@
 		47BE28DB1EAFC6D30005AE96 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		47BE28DD1EAFDF510005AE96 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		47DDE4E01EAF999C00543377 /* GE_SS_Two_Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Two_Medium.otf; sourceTree = "<group>"; };
-		47DDE4E31EAFA1E400543377 /* Home2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2.swift; sourceTree = "<group>"; };
 		547727F117F858626C96CEFC /* Pods_DrNour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrNour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F84DDE64368100CFC2F2495 /* Pods-DrNour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrNour.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrNour/Pods-DrNour.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33BF0E391EB0DA40005E086B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				33BF0E371EB0A878005E086B /* GalleryCollectionCell.swift */,
+				33BF0E3A1EB0DA7E005E086B /* AboutUsTabelViewCell.swift */,
+				33369DBE1EB38ECF004FBA29 /* ServiceCollectionCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		33EED7CF1E9F8FEF0051671D = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +105,15 @@
 		33EED7DA1E9F8FEF0051671D /* DrNour */ = {
 			isa = PBXGroup;
 			children = (
+				33BF0E391EB0DA40005E086B /* Cells */,
 				47DDE4E21EAFA1BD00543377 /* Controllers */,
 				33EED7DB1E9F8FEF0051671D /* AppDelegate.swift */,
 				33EED7DF1E9F8FEF0051671D /* Main.storyboard */,
+				33369DCA1EB3F17B004FBA29 /* CustomDatePickerAlert.swift */,
+				33369DC81EB3EFAE004FBA29 /* CustomDatePickerAlert.xib */,
+				33369DCC1EB3F1C7004FBA29 /* CustomAlertViewTransitioner.swift */,
+				33369DCE1EB41C93004FBA29 /* Utils.swift */,
+				33369DBC1EB38282004FBA29 /* ServicesItem.swift */,
 				47DDE4E01EAF999C00543377 /* GE_SS_Two_Medium.otf */,
 				33EED7E21E9F8FEF0051671D /* Assets.xcassets */,
 				33EED7E41E9F8FEF0051671D /* LaunchScreen.storyboard */,
@@ -85,11 +125,15 @@
 		47DDE4E21EAFA1BD00543377 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				47DDE4E31EAFA1E400543377 /* Home2.swift */,
 				47BE28DB1EAFC6D30005AE96 /* Home.swift */,
 				47BE28DD1EAFDF510005AE96 /* SideMenuTableViewController.swift */,
 				33E676B41EAFFFA700086600 /* Services.swift */,
+				33369DC01EB39044004FBA29 /* ServicesCV.swift */,
+				33369DC21EB3A3D1004FBA29 /* ServiceDetails.swift */,
+				33BF0E351EB0A114005E086B /* Gallery.swift */,
+				33BF0E3C1EB0DCBD005E086B /* AboutUs.swift */,
 				33E676B61EB00D5300086600 /* ContactUs.swift */,
+				33369DC61EB3DF7E004FBA29 /* ReserveAppointment.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -147,7 +191,7 @@
 					33EED7D71E9F8FEF0051671D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S8GM8ACE4X;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -176,6 +220,7 @@
 			files = (
 				33EED7E61E9F8FEF0051671D /* LaunchScreen.storyboard in Resources */,
 				47DDE4E11EAF999C00543377 /* GE_SS_Two_Medium.otf in Resources */,
+				33369DC91EB3EFAE004FBA29 /* CustomDatePickerAlert.xib in Resources */,
 				33EED7E31E9F8FEF0051671D /* Assets.xcassets in Resources */,
 				33EED7E11E9F8FEF0051671D /* Main.storyboard in Resources */,
 			);
@@ -236,12 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33369DC11EB39044004FBA29 /* ServicesCV.swift in Sources */,
 				33E676B51EAFFFA700086600 /* Services.swift in Sources */,
-				47DDE4E41EAFA1E400543377 /* Home2.swift in Sources */,
 				33E676B71EB00D5300086600 /* ContactUs.swift in Sources */,
 				47BE28DC1EAFC6D30005AE96 /* Home.swift in Sources */,
+				33369DCD1EB3F1C7004FBA29 /* CustomAlertViewTransitioner.swift in Sources */,
+				33BF0E3D1EB0DCBD005E086B /* AboutUs.swift in Sources */,
+				33BF0E3B1EB0DA7E005E086B /* AboutUsTabelViewCell.swift in Sources */,
+				33369DC31EB3A3D1004FBA29 /* ServiceDetails.swift in Sources */,
 				33EED7DC1E9F8FEF0051671D /* AppDelegate.swift in Sources */,
+				33369DCF1EB41C93004FBA29 /* Utils.swift in Sources */,
+				33BF0E361EB0A114005E086B /* Gallery.swift in Sources */,
+				33BF0E381EB0A878005E086B /* GalleryCollectionCell.swift in Sources */,
+				33369DC71EB3DF7E004FBA29 /* ReserveAppointment.swift in Sources */,
+				33369DBD1EB38282004FBA29 /* ServicesItem.swift in Sources */,
 				47BE28DE1EAFDF510005AE96 /* SideMenuTableViewController.swift in Sources */,
+				33369DBF1EB38ECF004FBA29 /* ServiceCollectionCell.swift in Sources */,
+				33369DCB1EB3F17B004FBA29 /* CustomDatePickerAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,12 +421,15 @@
 			baseConfigurationReference = 4105098877AD9BCA59506E1D /* Pods-DrNour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = S8GM8ACE4X;
 				INFOPLIST_FILE = DrNour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.be4em.DrNour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5433d2eb-3607-4d62-bbf1-baf917269b2e";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.be4em.DrNour";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -380,12 +439,15 @@
 			baseConfigurationReference = 7F84DDE64368100CFC2F2495 /* Pods-DrNour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = S8GM8ACE4X;
 				INFOPLIST_FILE = DrNour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.be4em.DrNour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5433d2eb-3607-4d62-bbf1-baf917269b2e";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.be4em.DrNour";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

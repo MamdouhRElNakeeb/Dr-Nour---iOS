@@ -21,6 +21,7 @@ class ContactUs: UITableViewController {
 
         // Do any additional setup after loading the view.
         
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         let camera = GMSCameraPosition.camera(withLatitude: 30.0695274, longitude: 31.2854649, zoom: 18.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
