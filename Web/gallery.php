@@ -6,25 +6,21 @@
  * Time: 3:09 PM
  */
 
-$dir = "gallery/";
+require ("secure/access.php");
+require("secure/DrNourConn.php");
 
-$return_array = array();
-
-
-// Open a directory, and read its contents
-if ($handle = opendir($dir)) {
-
-    while (false !== ($entry = readdir($handle))) {
-
-        if ($entry != "." && $entry != ".." && $entry != '.DS_Store') {
-
-            array_push($return_array, $entry);
-        }
+$access = new access(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$access->connect();
+$services = $access->getTableContent("Gallery");
+$a = array();
+$b = array();
+if ($services != false){
+    while ($row = mysqli_fetch_array($services)) {
+        $b["name"] = $row["name"];
+        $b["description"] = $row["description"];
+        array_push($a, $b);
     }
-
-    closedir($handle);
+    echo json_encode($a, JSON_UNESCAPED_UNICODE);
 }
-
-echo json_encode($return_array);
 
 ?>

@@ -11,15 +11,16 @@ require("secure/DrNourConn.php");
 
 $access = new access(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $access->connect();
-$exercises = $access->getTableContent("services");
+$services = $access->getTableContent("Services");
 $a = array();
 $b = array();
-if ($exercises != false){
-    while ($row = mysqli_fetch_array($exercises)) {
+if ($services != false){
+    while ($row = mysqli_fetch_array($services)) {
         $b["id"] = $row["id"];
         $b["title"] = $row["title"];
         $b["content"] = $row["content"];
         $b["advantages"] = $row["advantages"];
+        $b["image"] = $row["image"];
         $b["video"] = $row["video"];
         array_push($a, $b);
     }

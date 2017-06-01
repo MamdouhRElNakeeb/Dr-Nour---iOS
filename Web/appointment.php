@@ -7,8 +7,7 @@
  */
 
 $service = htmlentities($_REQUEST["service"]);
-$firstName = htmlentities($_REQUEST["firstName"]);
-$lastName = htmlentities($_REQUEST["lastName"]);
+$name = htmlentities($_REQUEST["name"]);
 $date = htmlentities($_REQUEST["date"]);
 $gender = htmlentities($_REQUEST["gender"]);
 $email = htmlentities($_REQUEST["email"]);
@@ -16,7 +15,7 @@ $mobile = htmlentities($_REQUEST["mobile"]);
 $message = htmlentities($_REQUEST["message"]);
 
 
-if (empty($service) || empty($firstName) || empty($lastName) || empty($date) || empty($gender) || empty($email) || empty($mobile) || empty($message)){
+if (empty($service) || empty($name) || empty($date) || empty($gender) || empty($email) || empty($mobile) || empty($message)){
 
     $returnArray["status"] = "400";
     $returnArray["message"] = "Missing Fields!";
@@ -30,7 +29,7 @@ require ("secure/DrNourConn.php");
 $access = new access(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $access->connect();
 
-$result = $access->makeAppointment($firstName, $lastName, $gender, $service, $date, $email ,$mobile, $message);
+$result = $access->makeAppointment($name, $gender, $service, $date, $email ,$mobile, $message);
 
 if ($result){
     $returnArray["error"] = FALSE;

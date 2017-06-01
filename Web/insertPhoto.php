@@ -11,25 +11,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     require ("secure/access.php");
     require ("secure/DrNourConn.php");
-    if(!empty($_POST['title']) && !empty($_POST['content']) && !empty($_POST['advantages']) && !empty($_POST['video'])) {
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $advantages = $_POST['advantages'];
-        $video = $_POST['video'];
+    if(!empty($_FILES["name"]["name"]) &&!empty($_POST['description'])) {
 
-        $servicesFolder = "gallery/services/";
+        $galleryFolder = "gallery/";
         $photoName=$_FILES["name"][ "name" ];
-    	move_uploaded_file($_FILES["name"]["tmp_name"], "$servicesFolder".$_FILES["name"]["name"]);
+    	move_uploaded_file($_FILES["name"]["tmp_name"], "$galleryFolder".$_FILES["name"]["name"]);
 
+        $description = $_POST['description'];
 
         $access = new access(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
         $access->connect();
-        $result = $access->insertService($title, $content, $advantages, $photoName, $video);
+        $result = $access->insertPhoto($photoName, $description);
 
         $access->disconnect();
 
         if($result){
-            $flag = "Service Added Successfully";
+            $flag = "Photo Added Successfully";
         }
     }
     else{
@@ -49,10 +46,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="DrNour | Add Service">
+    <meta name="description" content="DrNour | Add Photo">
     <meta name="author" content="">
 
-    <title>DrNour | Add Service</title>
+    <title>DrNour | Add Photo</title>
 
     <!-- Icon -->
     <link rel="shortcut icon" href="img/nour-logo-new.png" >
@@ -84,32 +81,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
-    <h3 class="text-center">Add Service</h3>
+    <h3 class="text-center">Add Photo to Gallery</h3>
 
     <!-- Service Form -->
     <div class="row">
         <form role="form" name="form1" id="form1" method="post" enctype="multipart/form-data" action="" class="col-s12" accept-charset="utf-8">
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="title" name="title" type="text" class="validate" required>
-                    <label for="title">Service Title</label>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <textarea id="content" name="content" class="materialize-textarea" required></textarea>
-                    <label for="content">Content</label>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <textarea id="advantages" name="advantages" class="materialize-textarea" required></textarea>
-                    <label for="content">Advantages</label>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="file-field input-field">
@@ -125,14 +101,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="video" name="video" type="text" class="validate" required>
-                    <label for="video">Video Code</label>
+                    <textarea id="description" name="description" class="materialize-textarea" required></textarea>
+                    <label for="description">Description</label>
                 </div>
             </div>
 
             <br>
             <div align="center" class="row">
-                <button class="btn waves-effect waves-light red darken-4" type="submit" name="submit">Add Service
+                <button class="btn waves-effect waves-light red darken-4" type="submit" name="submit">Add Photo
                     <i class="material-icons right">send</i>
                 </button>
                 <button class="btn waves-effect waves-light light-blue accent-4" type="reset">Reset</button>

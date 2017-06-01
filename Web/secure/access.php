@@ -47,30 +47,45 @@ class access{
     }
 
     // insert appointment into database
-    public function makeAppointment($firstName, $lastName, $gender, $service, $date, $email, $mobile, $message){
+    public function makeAppointment($name, $gender, $service, $date, $email, $mobile, $message){
 
-        $sql = "INSERT INTO Appointment SET firstName=?, lastName=?, gender=?, service=?, date=?, email=?, mobile=?, message=?";
+        $sql = "INSERT INTO Appointment SET name=?, gender=?, service=?, date=?, email=?, mobile=?, message=?";
         $statement = $this->conn->prepare($sql);
         if(!$statement){
             throw new Exception($statement->error);
         }
         // bind 8 parameters of type string to be placed in $sql command
-        $statement->bind_param("ssssssss", $firstName, $lastName, $gender, $service, $date, $email, $mobile, $message);
+        $statement->bind_param("sssssss", $name, $gender, $service, $date, $email, $mobile, $message);
         $returnValue = $statement->execute();
         return $returnValue;
 
     }
 
     // insert service into database
-    public function insertService($title, $content, $advantages, $video){
+    public function insertService($title, $content, $advantages, $photoName, $video){
 
-        $sql = "INSERT INTO Services SET title=?, content=?, advantages=?, video=?";
+        $sql = "INSERT INTO Services SET title=?, content=?, advantages=?, image=?, video=?";
         $statement = $this->conn->prepare($sql);
         if(!$statement){
             throw new Exception($statement->error);
         }
         // bind 4 parameters of type string to be placed in $sql command
-        $statement->bind_param("ssss", $title, $content, $advantages, $video);
+        $statement->bind_param("sssss", $title, $content, $advantages, $photoName, $video);
+        $returnValue = $statement->execute();
+        return $returnValue;
+
+    }
+
+    // insert photo into database
+    public function insertPhoto($name, $description){
+
+        $sql = "INSERT INTO Gallery SET name=?, description=?";
+        $statement = $this->conn->prepare($sql);
+        if(!$statement){
+            throw new Exception($statement->error);
+        }
+        // bind 2 parameters of type string to be placed in $sql command
+        $statement->bind_param("ss", $name, $description);
         $returnValue = $statement->execute();
         return $returnValue;
 
