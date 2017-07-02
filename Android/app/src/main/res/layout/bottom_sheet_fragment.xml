@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:background="#00ffffff"
+        android:gravity="top"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="#c4c4c4"
+            android:alpha=".5"
+            android:background="@drawable/dragbtn_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="5dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/landing_menu_row_margin"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/landing_menu_item_height"
+                        android:id="@+id/landingSettingsBtn"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/landing_menu_item_margin"
+                        android:layout_marginRight="@dimen/landing_menu_item_margin"
+                        card_view:cardCornerRadius="@dimen/landing_menu_item_cornerradius"
+                        card_view:cardUseCompatPadding="false"
+                        card_view:cardBackgroundColor="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:shadowColor="@color/white"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/landing_menu_item_txtmargin"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!-- First Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/landing_menu_row_margin"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="@dimen/landing_menu_item_height"
+                            android:layout_height="@dimen/landing_menu_item_height"
+                            android:id="@+id/landingExercisesBtn"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/landing_menu_item_margin"
+                            android:layout_marginRight="@dimen/landing_menu_item_margin"
+                            card_view:cardCornerRadius="@dimen/landing_menu_item_cornerradius"
+                            card_view:cardUseCompatPadding="false"
+                            card_view:cardBackgroundColor="@color/colorPrimary">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="15dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="fitCenter"/>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="@dimen/landing_menu_item_height"
+                            android:id="@+id/landingWorkoutsBtn"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/landing_menu_item_margin"
+                            android:layout_marginRight="@dimen/landing_menu_item_margin"
+                            card_view:cardCornerRadius="@dimen/landing_menu_item_cornerradius"
+                            card_view:cardUseCompatPadding="false"
+                            card_view:cardBackgroundColor="@color/colorPrimary">
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Third Row -->
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
