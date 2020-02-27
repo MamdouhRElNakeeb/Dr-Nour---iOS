@@ -49,10 +49,10 @@ class ServiceDetails: UITableViewController {
         let myParagraphStyle = NSMutableParagraphStyle()
         myParagraphStyle.lineSpacing = lineSpacing
         myParagraphStyle.alignment = .right
-        let myAttributes:Dictionary = [
-            NSParagraphStyleAttributeName: myParagraphStyle,
-            NSKernAttributeName: CharacterSpacing
-        ] as [String : Any]
+        let myAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedStringKey.paragraphStyle: myParagraphStyle
+//            NSAttributedStringKey.spa: CharacterSpacing
+        ]
         return NSAttributedString(string: text, attributes: myAttributes)
     }
     

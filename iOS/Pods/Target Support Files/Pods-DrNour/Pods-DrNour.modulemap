@@ -1,6 +1,0 @@
-framework module Pods_DrNour {
-  umbrella header "Pods-DrNour-umbrella.h"
-
-  export *
-  module * { export * }
-}
